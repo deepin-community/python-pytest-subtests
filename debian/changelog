@@ -1,0 +1,40 @@
+python-pytest-subtests (0.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add python3-pytest-xdist to Build-Depends, required by tests.
+  * Update year in d/copyright.
+
+ -- Michael Fladischer <fladi@debian.org>  Mon, 31 Jan 2022 17:06:59 +0000
+
+python-pytest-subtests (0.5.0-2) unstable; urgency=low
+
+  * Update d/watch to work with github again.
+  * Bump Standards-Version to 4.6.0.1.
+  * Add python-pytest to Build-Depends.
+  * Run upstream tests during build.
+
+ -- Michael Fladischer <fladi@debian.org>  Mon, 01 Nov 2021 20:43:25 +0000
+
+python-pytest-subtests (0.5.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * debian/watch: fix location of releases due to breakage on GitHub's side
+  * Standards-Version: 4.6.0 (routine-update)
+  * Add salsa-ci file (routine-update)
+  * d/control: append ":any" to Python dependency to enable cross-
+    building
+
+ -- Michael R. Crusoe <crusoe@debian.org>  Fri, 08 Oct 2021 10:54:52 +0200
+
+python-pytest-subtests (0.3.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Source-only upload for testing migration.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 12 Jan 2021 15:18:22 -0500
+
+python-pytest-subtests (0.3.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #977660).
+
+ -- Michael Fladischer <fladi@debian.org>  Fri, 18 Dec 2020 10:35:34 +0100
