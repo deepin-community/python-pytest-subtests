@@ -2,7 +2,7 @@
 
 set -e
 
-cp -r tests ${AUTOPKGTEST_TMP}
+cp -r pytest.ini tests ${AUTOPKGTEST_TMP}
 cd ${AUTOPKGTEST_TMP}
 for p in $(py3versions -s); do
     $p -m pytest tests
