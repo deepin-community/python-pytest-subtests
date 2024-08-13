@@ -1,6 +1,78 @@
 CHANGELOG
 =========
 
+0.13.1 (2024-07-16)
+-------------------
+
+* Fixed bug were an extra test would execute when ``-x/--exitfirst`` was used (`#139`_).
+
+.. _#139: https://github.com/pytest-dev/pytest-subtests/pull/139
+
+0.13.0 (2024-07-07)
+-------------------
+
+* Dropped support for EOL Python 3.7.
+* Added support for ``-x/--exitfirst`` (`#134`_).
+* Hide the traceback inside the ``SubTests.test()`` method (`#131`_).
+
+.. _#131: https://github.com/pytest-dev/pytest-subtests/pull/131
+.. _#134: https://github.com/pytest-dev/pytest-subtests/pull/134
+
+0.12.1 (2024-03-07)
+-------------------
+
+* Fixed compatibility with upcoming pytest ``8.1.x``.  (`#125`_).
+
+.. _#125: https://github.com/pytest-dev/pytest-subtests/issues/125
+
+0.12.0 (2024-03-06)
+-------------------
+
+* Python 3.12 is now officially supported (`#113`_).
+* Added typing support (`#115`_).
+* ``SubTests`` can be imported from ``pytest_subtests`` to type-annotate the ``subtests`` fixture.
+
+.. _#113: https://github.com/pytest-dev/pytest-subtests/pull/113
+.. _#115: https://github.com/pytest-dev/pytest-subtests/pull/115
+
+
+0.11.0 (2023-05-15)
+-------------------
+
+* Logging is displayed for failing subtests (`#92`_)
+* Passing subtests no longer turn the pytest output to yellow (as if warnings have been issued) (`#86`_). Thanks to `Andrew-Brock`_ for providing the solution.
+* Now the ``msg`` contents of a subtest is displayed when running pytest with ``-v`` (`#6`_).
+
+.. _#6: https://github.com/pytest-dev/pytest-subtests/issues/6
+.. _#86: https://github.com/pytest-dev/pytest-subtests/issues/86
+.. _#92: https://github.com/pytest-dev/pytest-subtests/issues/87
+
+.. _`Andrew-Brock`: https://github.com/Andrew-Brock
+
+0.10.0 (2022-02-15)
+-------------------
+
+* Added experimental support for suppressing subtest output dots in non-verbose mode with ``--no-subtests-shortletter`` -- this allows the native pytest column calculations to not be disrupted and minimizes unneeded output for large CI systems.
+
+0.9.0 (2022-10-28)
+------------------
+
+* Python 3.11 is officially supported.
+* Dropped support for Python 3.6.
+
+0.8.0 (2022-05-26)
+------------------
+
+* Now passing subtests are shown in the test run summary at the end (for example: ``10 failed, 1 passed, 10 subtests passed in 0.10s``) (`#70`_).
+
+.. _#70: https://github.com/pytest-dev/pytest-subtests/pull/70
+
+0.7.0 (2022-02-13)
+------------------
+
+* Fixed support for pytest 7.0, and ``pytest>=7.0`` is now required.
+
+
 0.6.0 (2022-01-15)
 ------------------
 

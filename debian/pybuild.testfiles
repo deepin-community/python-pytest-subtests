@@ -1,3 +1,5 @@
 pytest_subtests.egg-info
 tests
 tox.ini
+pytest.ini
+pyproject.toml
